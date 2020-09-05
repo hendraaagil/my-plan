@@ -1,5 +1,74 @@
+html {
+  min-height: 100%;
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background: url(/img/mario-bg.png) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #95e8f3;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
+
+.card:hover {
+  transform: scale(1.025);
+  transition: all 0.3s;
+}
+
+.card .card-title {
+  font-weight: 700;
+}
+
+.card .card-content .grey-text,
+.card .card-action div:nth-child(2) {
+  font-weight: 300;
+}
+
+nav ul li a:hover {
+  color: #95e8f3;
+}
+
+form {
+  margin: 60px 0;
+  padding: 20px;
+}
+
+form button,
+form h5 {
+  margin: 20px 0;
+}
+
+input,
+textarea,
+.btn {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+input[type='text']:not(.browser-default),
+input[type='email']:not(.browser-default),
+input[type='password']:not(.browser-default),
+textarea.materialize-textarea {
+  font-size: 20px;
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]),
+input[type='email']:not(.browser-default):focus:not([readonly]),
+input[type='password']:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  font-size: 20px;
+  border-color: #1976d2;
+  box-shadow: none;
 }
