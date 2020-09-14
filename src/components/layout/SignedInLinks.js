@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signOut } from '../../store/actions/authAction';
@@ -14,7 +14,7 @@ const SignedInLinks = (props) => {
       </li>
       <li>
         <NavLink to="/" className="btn btn-floating blue darken-1">
-          HA
+          {props.profile.initials}
         </NavLink>
       </li>
     </ul>
