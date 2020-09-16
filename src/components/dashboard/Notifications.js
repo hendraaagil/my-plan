@@ -14,8 +14,8 @@ const Notifications = (props) => {
               notifications.map((notification) => {
                 return (
                   <li key={notification.id}>
-                    <span className="blue-text text-darken-2">
-                      {notification.user}
+                    <span className="blue-text text-darken-1">
+                      <b>{notification.user}</b>
                     </span>
                     <p>{notification.content}</p>
                     <div className="grey-text note-date">
